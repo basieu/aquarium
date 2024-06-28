@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: url('./gfx/sea-background.jpg') no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.fishes-container {
+    height: 100%;
+
+    img {
+        position: absolute;
+
+        &.bubbles,
+        &.bubble {
+            width: 35px;
+        }
+
+        &.grass {
+            bottom: 0;
+            left: 0;
+            z-index: 5;
+
+            &.right {
+                right: 0;
+                left: auto;
+            }
+        }
+    }
+}
+
+
+// Not using keyframes anymore
+
+// @keyframes fromLeft {
+//     from {left: -20%;}
+//     to {left: 120%;}
+// }
+
+// @keyframes fromRight {
+//     from {left: 120%;}
+//     to {left: -20%;}
+// }
+
+// @keyframes bubbles {
+//     from {top: 110%; opacity: 1;}
+//     to {top: 15%; opacity: 0;}
+// }
